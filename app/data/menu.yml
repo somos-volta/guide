@@ -1,0 +1,97 @@
+cta:
+  title:               "Contacto"
+  slug:                "contacto"
+  url:                 "/contacto"
+
+header:
+  -
+    title:               "Layout"
+    slug:                "layout"
+    url:                 "/layout"
+  -
+    title:               "Typography"
+    slug:                "typography"
+    url:                 "/typography"
+  -
+    title:               "Icons"
+    slug:                "icons"
+    url:                 "/iconography"
+  -
+    title:               "Forms"
+    slug:                "forms"
+    url:                 "/forms"
+  -
+    title:               "Components"
+    slug:                "components"
+    url:                 "/components"
+
+footer:
+  -
+    slug:                "info"
+    title:               "Información"
+    links:
+      -
+        title:           "Contacto"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Terminos y condiciones"
+        slug:            "terms"
+        url:             ""
+
+  -
+    slug:                "products"
+    title:               "Producto"
+    links:
+      -
+        title:           "Accesorios"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Bancos"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Decoracion"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Diseño moderno"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Decoracion"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Lamparas"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Sillas"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Sillas retro"
+        slug:            ""
+        url:             ""
+  -
+    slug:                "contact"
+    title:               "Contactanos"
+    links:
+      -
+        title:           "+56 9 6577 1233"
+        slug:            ""
+        url:             ""
+      -
+        title:           "+56 9 6577 1233"
+        slug:            ""
+        url:             ""
+      -
+        title:           "VOLTA's Street #1234"
+        slug:            ""
+        url:             ""
+      -
+        title:           "Abierto de 10 a 18 hrs."
+        slug:            ""
+        url:             ""
