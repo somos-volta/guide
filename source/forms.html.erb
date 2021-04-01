@@ -1,0 +1,233 @@
+---
+layout: page
+title: Typography
+---
+
+<h1>Forms</h1>
+<hr/>
+<ul class="menu">
+  <li class="menu-item">
+    Form controls
+    <ul class="menu">
+      <li class="menu-item">Normal</li>
+      <li class="menu-item">Hover</li>
+      <li class="menu-item">Focused</li>
+      <li class="menu-item">Disebled</li>
+      <li class="menu-item">Read only</li>
+      <li class="menu-item">Validation</li>
+    </ul>
+  </li>
+  <li class="menu-item">Control sizing</li>
+  <li class="menu-item">Control groups</li>
+  <li class="menu-item">Labels positions</li>
+  <li class="menu-item">Form layouts</li>
+  <li class="menu-item">Form validation</li>
+</ul>
+
+<section id="section-text-input" class="section">
+  <h2>Inputs</h2>
+  <hr/>
+
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</section>
+
+<section id="section-file-upload" class="section">
+  <h2>File upload</h2>
+  <hr/>
+  <div class="mb-3">
+    <label for="formFile" class="form-label">Default file input example</label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+  <div class="mb-3">
+    <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+    <input class="form-control" type="file" id="formFileMultiple" multiple>
+  </div>
+  <div class="mb-3">
+    <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+    <input class="form-control" type="file" id="formFileDisabled" disabled>
+  </div>
+</section>
+
+<section id="section-color" class="section">
+  <h2>Color</h2>
+  <hr/>
+  <label for="exampleColorInput" class="form-label">Color picker</label>
+  <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+</section>
+
+<section id="section-datalist" class="section">
+  <h2>Datalists</h2>
+  <hr/>
+  <label for="exampleDataList" class="form-label">Datalist example</label>
+  <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+  <datalist id="datalistOptions">
+    <option value="San Francisco">
+    <option value="New York">
+    <option value="Seattle">
+    <option value="Los Angeles">
+    <option value="Chicago">
+  </datalist>
+</section>
+
+<section id="section-select" class="section">
+  <h2>Select</h2>
+  <hr/>
+
+  <label for="select1" class="form-label">Example select</label>
+  <select id="select1" class="form-select" aria-label="Default select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <label for="select1" class="form-label">Example multiple select</label>
+  <select class="form-select" multiple aria-label="multiple select example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+</section>
+
+<section id="section-options" class="section">
+  <h2>Checks y Radios</h2>
+  <hr/>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Default checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+    <label class="form-check-label" for="flexCheckChecked">
+      Checked checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+    <label class="form-check-label" for="flexCheckIndeterminate">
+      Indeterminate checkbox
+    </label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+      Default radio
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+    <label class="form-check-label" for="flexRadioDefault2">
+      Default checked radio
+    </label>
+  </div>
+
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+    <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+  </div>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+    <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+  </div>
+</section>
+
+<section id="section-range" class="section">
+  <h2>Range</h2>
+  <hr/>
+  <label for="customRange1" class="form-label">Example range</label>
+  <input type="range" class="form-range" id="customRange1">
+
+  <label for="customRange2" class="form-label">Example Min and max range</label>
+  <input type="range" class="form-range" min="0" max="5" id="customRange2">
+
+  <label for="customRange3" class="form-label">Example Steps range</label>
+  <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+</section>
+
+<section id="section-date" class="section">
+  <h2>Date</h2>
+  <hr/>
+  <input type="week">
+  <input type="month">
+  <input type="date">
+  <input type="datetime-local">
+  <input type="time">
+</section>
+
+<section id="section-special" class="section">
+  <h2>Special</h2>
+  <hr/>
+  <div class="mb-md">
+    <label for="inputEmail" class="form-label">Email input</label>
+    <input id="inputEmail" type="email">
+  </div>
+  <div class="mb-md">
+    <label for="inputEmail" class="form-label">URL input</label>
+  <input type="url">
+  </div>
+  <div class="mb-md">
+    <label for="inputEmail" class="form-label">Phone input</label>
+    <input type="tel">
+  </div>
+  <div class="mb-md">
+    <label for="inputEmail" class="form-label">Number input</label>
+    <input type="number">
+  </div>
+</section>
+
+<section id="section-file" class="section">
+  <h2>Search</h2>
+  <hr/>
+  <input type="search">
+</section>
+
+<section id="section-password" class="section">
+  <h2>Password</h2>
+  <hr/>
+  <input type="password">
+</section>
+
+<section id="section-inputs" class="section hidden">
+  <input type="button">
+  <input type="checkbox">
+  <input type="color">
+  <input type="date">
+  <input type="datetime-local">
+  <input type="email">
+  <input type="file">
+  <input type="hidden">
+  <input type="image">
+  <input type="month">
+  <input type="number">
+  <input type="password">
+  <input type="radio">
+  <input type="range">
+  <input type="reset">
+  <input type="search">
+  <input type="submit">
+  <input type="tel">
+  <input type="text"> (default value)
+  <input type="time">
+  <input type="url">
+  <input type="week">
+</section>

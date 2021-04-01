@@ -1,0 +1,109 @@
+---
+layout: page
+title: Components
+---
+
+<h1>Components</h1>
+<br/><hr/><br/>
+
+<h2>Buttons</h2>
+<hr/>
+<a href="#" class="button">Quiero saber mas sobre los OKR’s  →</a>
+
+  <div class="mode-dark bg-darkest">
+    <a href="#" class="button solid default">Button</a>
+    <a href="#" class="button solid primary">Button</a>
+    <a href="#" class="button solid secondary">Button</a>
+    <a href="#" class="button solid info">Button</a>
+    <a href="#" class="button solid success">Button</a>
+    <a href="#" class="button solid warning">Button</a>
+    <a href="#" class="button solid danger">Button</a>
+
+    <hr/>
+
+    <a href="#" class="button outline default">Button</a>
+    <a href="#" class="button outline primary">Button</a>
+    <a href="#" class="button outline secondary">Button</a>
+    <a href="#" class="button outline info">Button</a>
+    <a href="#" class="button outline success">Button</a>
+    <a href="#" class="button outline warning">Button</a>
+    <a href="#" class="button outline danger">Button</a>
+
+    <hr/>
+  </div>
+  <div class="mode-light">
+    <a href="#" class="button solid">Button</a>
+    <a href="#" class="button solid primary">Button</a>
+    <a href="#" class="button solid secondary">Button</a>
+    <a href="#" class="button solid info">Button</a>
+    <a href="#" class="button solid success">Button</a>
+    <a href="#" class="button solid warning">Button</a>
+    <a href="#" class="button solid danger">Button</a>
+
+    <hr/>
+
+    <a href="#" class="button outline">Button</a>
+    <a href="#" class="button outline primary">Button</a>
+    <a href="#" class="button outline secondary">Button</a>
+    <a href="#" class="button outline info">Button</a>
+    <a href="#" class="button outline success">Button</a>
+    <a href="#" class="button outline warning">Button</a>
+    <a href="#" class="button outline danger">Button</a>
+
+    <hr/>
+  </div>
+
+<h2>Menu</h2>
+<hr/>
+<ul class="navbar-menu menu">
+  <% data.menu.header.each do |item| %>
+    <% if item.url %>
+      <li class="menu-item menu-item-<%= item.slug %>">
+        <a class="menu-link" href="<%= item.url %>"><%= item.title %></a>
+      </li>
+    <% elsif item.links %>
+      <li class="menu-item menu-item-<%= item.slug %> dropdown">
+        <span class="menu-label" href="<%= item.url %>"><%= item.title %></span><i class="icon-xl icon-caret"></i>
+        <ul class="menu dropdown-menu">
+          <% item.links.each do |item| %>
+            <% if item.url %>
+              <li class="menu-item menu-item-<%= item.slug %>">
+                <a class="menu-link" href="<%= item.url %>"><%= item.title %></a>
+              </li>
+            <% elsif item.links %>
+              <li class="menu-item menu-item-<%= item.slug %>">
+                <span class="menu-label" href="<%= item.url %>"><%= item.title %></span>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+<ul class="menu">
+  <% data.menu.header.each do |item| %>
+    <% if item.url %>
+      <li class="menu-item menu-item-<%= item.slug %>">
+        <a class="menu-link" href="<%= item.url %>"><%= item.title %></a>
+      </li>
+    <% elsif item.links %>
+      <li class="menu-item menu-item-<%= item.slug %>">
+        <span class="menu-label" href="<%= item.url %>"><%= item.title %></span><i class="icon-xl icon-caret"></i>
+        <ul class="menu">
+          <% item.links.each do |item| %>
+            <% if item.url %>
+              <li class="menu-item menu-item-<%= item.slug %>">
+                <a class="menu-link" href="<%= item.url %>"><%= item.title %></a>
+              </li>
+            <% elsif item.links %>
+              <li class="menu-item menu-item-<%= item.slug %>">
+                <span class="menu-label" href="<%= item.url %>"><%= item.title %></span>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
