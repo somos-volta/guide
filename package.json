@@ -6,7 +6,7 @@
   "version": "0.0.1",
   "repository": "",
   "scripts": {
-    "start": "set LOGGY_STACKS=true && brunch watch --server --port 3377",
+    "start": "set LOGGY_STACKS=true && brunch watch --server --port 3366",
     "build": "brunch build --production --env production",
     "clean": "rm -rf .tmp assets"
   },

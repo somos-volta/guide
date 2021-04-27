@@ -1,0 +1,226 @@
+// LAYOUT
+
+.docs {
+  & {
+    background-color: $lightest-tone;
+  }
+  &-header > .brand { margin: 1px 0 2px; }
+  &-footer {}
+  &-body {
+    h1 {
+      @include typography(headline);
+    }
+    h2 {
+      @include typography(title);
+    }
+    h3 {
+      @include typography(subhead);
+    }
+    // p {
+    //   @include typography(body);
+    // }
+    > p code, > code {
+      background: rgba($lighter-tone,.4);
+      border: 1px solid rgba($lighter-tone,.3);
+      color: tint($dark-tone,20%);
+      border-radius: 2px;
+      padding: 1px 4px 2px 4px;
+    }
+  }
+
+  &-nav {
+    float: right;
+    margin: 6px 0;
+  }
+  &-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+    li + li {
+      margin-left: 10px;
+    }
+  }
+  &-link {
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  &-jumbo {
+    text-align: center;
+    padding: 2rem;
+  }
+  &-jumbo-title {
+    @include typography(headline);
+    margin: 1rem 0;
+  }
+}
+
+
+// EXAMPLES
+
+.docs {
+  &-example,
+  &-code {
+    margin-bottom: $spacing;
+  }
+  &-example {
+    background-color: $white-color;
+    position: relative;
+    z-index: 1;
+    border-radius: 2px;
+    overflow: auto;
+    &        { padding: $gutter; }
+    .columns { margin: -$gutter; }
+    .column  { padding: $gutter; }
+
+    &:before {
+      content: "Example";
+      display: block;
+      top: 0px;
+      right: 0px;
+      float: left;
+      position: absolute;
+      padding: 2px 4px;
+      color: white;
+      background-color: $light-tone;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+}
+
+hr {
+  margin: ($unit * 4)-1 0 ($unit * 4);
+  height: 0;
+  clear: both;
+  border: solid;
+  border-width: 1px 0 0;
+}
+
+.highlight {
+  & {
+    margin: 0;
+    background-color: $lightest-tone;
+    line-height: $spacing;
+  }
+  table td {
+    padding: $unit;
+  }
+  table td.gutter {
+    border-right: 1px solid $lighter-tone;
+    padding-right: 12px;
+    padding-left: 0;
+    color: $light-tone;
+    font-weight: bold;
+  }
+  table td.code {
+    padding-left: 12px;
+  }
+}
+
+.color-swatches {
+  font-size: 0;
+  margin-bottom: $spacing;
+}
+
+.color-block {
+  & {
+    height: 80px;
+    color: white;
+    text-align: center;
+    margin: $spacing 0px;
+  }
+  &.small {
+    height: 20px;
+  }
+  &.small + &,
+  & + &.small {
+    margin-top: -$spacing;
+  }
+}
+
+.color-theme {
+  & {
+    padding: $gutter;
+  }
+  > div {
+    padding: $spacing;
+  }
+  span {
+    float: right;
+  }
+}
+
+.docs-example {
+
+  &-schema {
+    .my-class-1 {
+      background: $success-color;
+      border-left: 5px solid $success-dark-color  ;
+      color: $lightest-tone;
+      padding: $spacing;
+    }
+    .my-class-2 {
+      background: $white-color;
+      border: 1px solid $notice-light-color;
+      color: $notice-color;
+      padding: $spacing - 1;
+      text-align: center;
+    }
+  }
+
+  &-type {
+    .my-metadata { @include typography(caption); }
+    .my-title    { @include typography(display1); }
+    .my-lead     { @include typography(lead); }
+    .my-body     { @include typography(body); }
+  }
+
+  &-htmltype {
+    span { @include typography(caption); margin-bottom: 8px; }
+    h1   { @include typography(display1); }
+    h3   { @include typography(lead); }
+    p    { @include typography(body); }
+  }
+
+  &-light {
+    $color: map-get($themes,light);
+    & {
+      background-color: $white-color;
+      color: $white-color;
+    }
+    .color-theme-divider,
+    .color-theme-hint {
+      color: $darker-tone;
+    }
+    .color-theme-color     { background-color: $color; }
+    .color-theme-divider   { background-color: divider-color($color); }
+    .color-theme-hint      { background-color: hint-color($color); }
+    .color-theme-secondary { background-color: secondary-color($color); }
+    .color-theme-icon      { background-color: icon-color($color); }
+    .color-theme-primary   { background-color: primary-color($color); }
+  }
+
+  &-dark {
+    $color: map-get($themes,dark);
+    & {
+      background-color: $darker-tone;
+      color: $darker-tone;
+    }
+    .color-theme-divider,
+    .color-theme-hint {
+      color: $white-color;
+    }
+    .color-theme-color     { background-color: $color; }
+    .color-theme-divider   { background-color: divider-color($color); }
+    .color-theme-hint      { background-color: hint-color($color); }
+    .color-theme-secondary { background-color: secondary-color($color); }
+    .color-theme-icon      { background-color: icon-color($color); }
+    .color-theme-primary   { background-color: primary-color($color); }
+  }
+
+}

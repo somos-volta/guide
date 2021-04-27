@@ -24,7 +24,19 @@ header:
     title:               "Components"
     slug:                "components"
     url:                 "/components"
-
+    links:
+      -
+        title:           "Navigation Bar"
+        slug:            "navbar"
+        url:             "/components/navigation-bar"
+      -
+        title:           "Layouts"
+        slug:            "layouts"
+        url:             "/components/layouts"
+  -
+    title:           "Templates"
+    slug:            "templates"
+    url:             "/templates"
 footer:
   -
     slug:                "info"
